@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <title>Junha Times</title>
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes WooFlip{
+            0% {
+                transform: rotateX(0);
+            }
+            50% {
+                transform: rotateX(360deg) translateX(100px);
+                border-radius: 20px;
+                border-color: blue;
+            }
+            100% {
+                transform: rotateX(0);
+                /* transform: rotateX(0) translateX(0); 위 문장과 같은 뜻 */
+            }
+        }
+        img {
+            border: 10px solid orange;
+            border-radius: 50%;
+            width: 200px;
+            animation: WooFlip 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <img src="NC_logo.png" />
+</body>
+</html>

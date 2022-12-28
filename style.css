@@ -1,0 +1,15 @@
+#container {
+    background-color: potato;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
